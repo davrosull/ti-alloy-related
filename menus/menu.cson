@@ -1,0 +1,11 @@
+'menu': [
+  {
+    'label': 'Titanium'
+    'submenu': [
+      {
+        'label': 'Open related',
+        'command': 'ti-alloy-related:openRelated'
+    }
+    ]
+  }
+]
