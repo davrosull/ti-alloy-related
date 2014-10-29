@@ -1,7 +1,7 @@
 {
   "name": "ti-alloy-related",
   "main": "./lib/ti-alloy-related",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "A quick way to open a controllers related View and TSS file for Ti Alloy Projects.",
   "activationEvents": [
     "ti-alloy-related:openRelated"
