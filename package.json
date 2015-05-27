@@ -1,11 +1,15 @@
 {
   "name": "ti-alloy-related",
   "main": "./lib/ti-alloy-related",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "description": "A quick way to open a controllers related View and TSS file for Ti Alloy Projects.",
   "activationCommands": {
-    "atom-workspace": ["ti-alloy-related:openRelated"],
-    "atom-text-editor": ["ti-alloy-related:openRelated"]
+    "atom-workspace": [
+      "ti-alloy-related:openRelated"
+    ],
+    "atom-text-editor": [
+      "ti-alloy-related:openRelated"
+    ]
   },
   "repository": "https://github.com/soulglo/ti-alloy-related",
   "license": "MIT",
