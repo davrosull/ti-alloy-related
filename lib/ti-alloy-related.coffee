@@ -1,4 +1,9 @@
 module.exports =
+  config:
+    useSplitPanes:
+      type: 'boolean'
+      default: true
+
   activate: ->
     atom.workspaceView.command "ti-alloy-related:openRelated", => @openRelated()
 
@@ -25,7 +30,10 @@ module.exports =
       style = uri.replace('/styles/', '/controllers/')
       style = style.replace('.tss', '.js')
 
-    atom.workspaceView.getActivePane().splitRight()
+    if atom.config.get "ti-alloy-related.useSplitPanes"
+      atom.workspaceView.getActivePane().splitRight()
     atom.workspace.open(view)
-    atom.workspaceView.getActivePane().splitDown()
+
+    if atom.config.get "ti-alloy-related.useSplitPanes"
+      atom.workspaceView.getActivePane().splitDown()
     atom.workspace.open(style)
